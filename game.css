@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.game{
+    background-color: #89C15E;
+    height: 100vh;
+    top:0%;
+    width: 100%;
+    position: fixed;
+}
+.container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+/* Score Bord*/
+.scorebord{
+    display:flex;
+    border: 5px solid white;
+    border-radius: 20px;
+    justify-content:space-around;
+    align-items: center;
+    height: 130px;
+    width: 50%;   
+}
+
+.left{
+    color: white;
+}
+
+.right {
+    display: flex;
+     justify-content: space-around;
+    align-items: center;
+}
+
+.right div{
+    margin: 0px 20px;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    padding: 4px 4px;
+    text-align: center;
+}
+ .right p{
+    font-size: 15px;
+    font-weight: 700;
+ }
+
+ .right #cscore,#yscore{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    border: 0px;
+    color:black;
+}
+
+/*Choice*/
+.btn{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+#rock{
+    border: 10px solid #0074B6;
+}
+
+#paper{
+    border: 10px solid #FFA943;
+}
+
+#scissors{
+    border: 10px solid #BD00FF;
+}
+
+.choice{
+    background-image: url(bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-size: 18rem 15rem;
+    background-position-x: center;
+    background-position-y: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "rock paper"
+    "scissors scissors";
+    place-items: center;
+    height: 25rem;
+    width: 30rem;
+}
+ .choice #rock{
+    grid-area: rock;
+ }
+
+ .choice #scissors{
+    grid-area: scissors;
+ }
+
+ .choice #paper{
+    grid-area: paper;
+ }
+ .rule{
+    bottom: 0%;
+    right: 0%;
+
+ }
+ .arpit{
+    margin-right: 0%;
+ }
+ 

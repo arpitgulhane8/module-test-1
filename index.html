@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <div class="game">
+        <div class="container">
+            <div class="scorebord">
+                <div class="left">
+                    <h2>ROCK</h2>
+                    <h2>PAPER</h2>
+                    <h2>SCISSORS</h2>
+                </div>
+                <div class="right">
+                    <div class="cscore">
+                        <p>Computer</p>
+                        <p>Score</p>
+                        <input id="cscore" placeholder="0" readonly>
+                    </div>
+                    ,<div class="yscore">
+                        <p>Your</p>
+                        <p>Score</p>
+                        <input id="yscore" placeholder="0" readonly>
+                    </div>
+                </div>
+            </div>
+            <div class="choice">
+                <button class="btn" id="rock" onclick="playgame('rock')">
+                    <img src="rock.png" height="50px" width="50px">
+                </button>
+                <button class="btn" id="paper" onclick="playgame('paper')">
+                    <img src="paper.png" height="50px" width="50px">
+                </button>
+                <button class="btn" id="scissors" onclick="playgame('scissors')">
+                    <img src="scissors.png" height="50px" width="50px">
+                </button>
+            </div>
+            <section class="hidden_result ">
+                <h2 class="result_heading"></h2>
+                </h2>
+                <h2 classs="result_heading"></h2>
+            </section>
+
+        </div>
+        <button class="rule">RULE</button>
+        <div class="arpit">
+            arpit
+        </div>
+    </div>
+    <script src="game.js"></script>
+
+</body>
+
+</html>
