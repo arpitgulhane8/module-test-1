@@ -13,9 +13,9 @@
         <div class="container">
             <div class="scorebord">
                 <div class="left">
-                    <h2>ROCK</h2>
-                    <h2>PAPER</h2>
-                    <h2>SCISSORS</h2>
+                    <h1>ROCK</h1>
+                    <h1>PAPER</h1>
+                    <h1>SCISSORS</h1>
                 </div>
                 <div class="right">
                     <div class="cscore">
@@ -30,30 +30,63 @@
                     </div>
                 </div>
             </div>
-            <div class="choice">
-                <button class="btn" id="rock" onclick="playgame('rock')">
+            <!------------------------------------------------------------------------------------------------>
+            <div class="choice" >
+                <button class="btn" id="rock" onclick="playgame('rock')" onclick="toggleShadow()">
                     <img src="rock.png" height="50px" width="50px">
                 </button>
-                <button class="btn" id="paper" onclick="playgame('paper')">
+                <button class="btn" id="paper" onclick="playgame('paper')" onclick="toggleShadow()">
                     <img src="paper.png" height="50px" width="50px">
                 </button>
-                <button class="btn" id="scissors" onclick="playgame('scissors')">
+                <button class="btn" id="scissors" onclick="playgame('scissors')" onclick="toggleShadow()">
                     <img src="scissors.png" height="50px" width="50px">
                 </button>
             </div>
-            <section class="hidden_result ">
-                <h2 class="result_heading"></h2>
-                </h2>
-                <h2 classs="result_heading"></h2>
-            </section>
-
+            <!------------------------------------------------------------------------------------------------->
+            <div class="choice_display">
+                <div class="userpicked">
+                    <h1>You picked</h1>
+                    <button class="btn" id="rock">
+                        <img src="rock.png" height="50px" width="50px">
+                    </button>
+                    <div></div>
+                </div>
+                <div class="hidden_result">
+                    <h1 class="result"></h1>
+                    <h3>Against Pc</h3>
+                    <button class="play_again" onclick="play_again()">Play Again</button>
+                </div>
+                <div class="Computerpicked">
+                    <h1>Pc picked</h1>
+                    <button class="btn" id="rock">
+                        <img src="rock.png" height="50px" width="50px">
+                    </button>
+                    <div></div>
+                </div>
+            </div>
+            <!--------------------------------------------------------------------------------------------------->
+            <div class="hurray" style="display:none">
+                <img class="troffe" src="Vector.png">
+                <h1>HURRAY</h1>
+                <h3>YOU WIN</h3>
+                <button class="play_again" onclick="play_again()">Play Again</button>
+            </div>
         </div>
-        <button class="rule">RULE</button>
-        <div class="arpit">
-            arpit
-        </div>
+       
     </div>
-    <script src="game.js"></script>
+    <button class="next" id="next" onclick="hurray_page()" style="display: none;">NEXT</div>`
+        <button class="rule" id="showRules">RULES</button>
+            <div class="rules" style="display: none;">
+                <h1>Game Rules</h1>
+                <ul>
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you'll count off "rock, paper, sissors, shoot" of just "rock, paper,
+                        scissors."</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                    <li>If both players lay down the smae hand, each player lays down another hand</li>
+                </ul>
+            </div>
+            <script src="js.js"></script>
 
 </body>
 

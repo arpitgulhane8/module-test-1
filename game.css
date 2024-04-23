@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: "Roboto", sans-serif;
 
 }
 .game{
@@ -41,8 +42,8 @@
 .right div{
     margin: 0px 20px;
     background-color: white;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 10px;
     padding: 4px 4px;
     text-align: center;
@@ -53,8 +54,8 @@
  }
 
  .right #cscore,#yscore{
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     text-align: center;
     font-size: 40px;
     font-weight: 700;
@@ -97,6 +98,7 @@
     height: 25rem;
     width: 30rem;
 }
+
  .choice #rock{
     grid-area: rock;
  }
@@ -108,12 +110,84 @@
  .choice #paper{
     grid-area: paper;
  }
- .rule{
-    bottom: 0%;
-    right: 0%;
+
+ .choice .btn {
+    cursor: pointer;
+    transition: all 0.2sec;
+}
+
+.choice .btn:hover {
+    transform: translate3d(0px, -8px, 0px);
+}
+
+.choice_display{
+    display: none;
+    width: 50rem ;
+    height: 20rem;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+ 
+}
+
+.userpicked ,.computerpicked{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center;
+   
+}
+.hidden_result{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+
+}
+.play_again{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border: 0px;
+}
+
+.hurray{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+ .rule,.next{
+    position: fixed;
+    bottom: 60px;
+    width: 100px;
+    height: 50px;
+    border: 5px solid white;
+    background: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2sec;
+    color: white;
 
  }
- .arpit{
-    margin-right: 0%;
+
+ .rule{
+    right: 50px;
+
  }
+ .next{
+    right: 180px;
+ }
+ .rule:hover,.next:hover {
+    background-color: #91da2b;
+    transform: translate3d(0px, -6px, 0px);
+}
+
  
